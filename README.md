@@ -248,3 +248,13 @@ For production use:
 - [Realtime Database Guide](https://firebase.google.com/docs/database)
 - [Firebase Security Rules](https://firebase.google.com/docs/database/security)
 
+## 👤Authors
+Namith KP
+
+- GitHub: [Namith K P](https://github.com/Namith-kp)
+- Project URL: [Firebase IOT Car](https://github.com/Namith-kp/nodemcu-firebase-iot-car/)
+
+## License
+
+- [MIT](https://github.com/Namith-kp/nodemcu-firebase-iot-car/blob/master/LICENSE)
+
