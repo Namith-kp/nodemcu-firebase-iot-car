@@ -2,6 +2,9 @@
 
 This project now uses Firebase Realtime Database instead of WebSockets for real-time communication.
 
+## Testing Preview
+https://github.com/user-attachments/assets/5f5314f0-f3d4-407b-ab03-28e94e794272
+
 ## Step 1: Create Firebase Project
 
 1. Go to [Firebase Console](https://console.firebase.google.com/)
