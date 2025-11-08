@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeMCU Firebase Car Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Firebase Car Control Panel</h1>
+            <div class="status-indicator">
+                <span id="connectionStatus" class="status-dot disconnected"></span>
+                <span id="connectionText">Disconnected</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="control-panel">
+                <div class="speed-control">
+                    <label for="speedSlider">Speed: <span id="speedValue">50</span>%</label>
+                    <input type="range" id="speedSlider" min="0" max="100" value="50">
+                </div>
+
+                <div class="joystick-container">
+                    <div class="joystick-area" id="joystickArea">
+                        <div class="joystick" id="joystick">
+                            <div class="joystick-handle"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-controls">
+                    <button class="control-btn stop-btn" id="stopBtn">STOP</button>
+                </div>
+
+                <div class="d-pad">
+                    <div class="d-pad-row">
+                        <button class="d-pad-btn" id="forwardLeftBtn">↖</button>
+                        <button class="d-pad-btn forward" id="forwardBtn">↑</button>
+                        <button class="d-pad-btn" id="forwardRightBtn">↗</button>
+                    </div>
+                    <div class="d-pad-row">
+                        <button class="d-pad-btn left" id="leftBtn">←</button>
+                        <button class="d-pad-btn center" id="centerBtn">●</button>
+                        <button class="d-pad-btn right" id="rightBtn">→</button>
+                    </div>
+                    <div class="d-pad-row">
+                        <button class="d-pad-btn" id="backwardLeftBtn">↙</button>
+                        <button class="d-pad-btn backward" id="backwardBtn">↓</button>
+                        <button class="d-pad-btn" id="backwardRightBtn">↘</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-card">
+                    <h3>Connection Info</h3>
+                    <p id="carStatus">Waiting for car...</p>
+                    <p id="lastCommand">No commands sent</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Instructions</h3>
+                    <ul>
+                        <li>Adjust speed with the slider</li>
+                        <li>Use the D-pad or joystick to control</li>
+                        <li>Click STOP to halt the car</li>
+                        <li>Works on mobile and desktop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
