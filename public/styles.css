@@ -246,11 +246,11 @@ header h1 {
 }
 
 .d-pad-btn.forward {
-    background: linear-gradient(135deg, var(--success-color), #059669);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
 }
 
 .d-pad-btn.backward {
-    background: linear-gradient(135deg, var(--warning-color), #d97706);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
 }
 
 .d-pad-btn.left,
